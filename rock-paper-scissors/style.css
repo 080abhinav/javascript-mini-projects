@@ -1,16 +1,18 @@
 body {
     background: radial-gradient(circle at top left, #0f0c29, #302b63, #24243e);
-    height: 100vh;
+    min-height: 100vh;
     font-family: 'Orbitron', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .navbar {
     display: flex;
     background: rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(0, 255, 255, 0.3);
     box-shadow: 0 2px 10px rgba(0, 255, 255, 0.2);
-    border-radius: 30px;
+    border-radius: 0px 0px 30px 30px;
     width: 100%;
     height: 70px;
     align-items: center;
@@ -18,13 +20,141 @@ body {
 }
 
 .logo {
-    width:45px;
+    width: 45px;
     height: auto;
-    transition: transform 0.3s ease;
-    margin-left:1.5rem;
+    margin-left: 1.5rem;
     display: block;
 }
 
-.logo:hover {
-    transform: scale(1.2);
+
+
+.rulebook {
+    margin-right: 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    border-radius: 30px;
+    padding: 10px 15px 10px 15px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.game-button {
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.game-img {
+    width: 20rem;
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0 0 0;
+}
+
+table {
+    width: 75%;
+    text-align: center;
+    border: 2px solid #00fff7;
+    box-shadow: 0 0 15px #00fff7;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th,
+td {
+    border: 1px solid #00fff7;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #ffffff;
+    width: 25%;
+}
+
+th {
+    background: rgba(0, 255, 247, 0.1);
+    color: #00fff7;
+}
+
+td {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.reset-score {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.reset-btn {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    border-radius: 30px;
+    padding: 10px 15px 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.25);
+    border-top: 1px solid rgba(0, 255, 255, 0.3);
+    box-shadow: 0 2px 10px rgba(0, 255, 255, 0.2);
+    border-radius: 30px 30px 0px 0px;
+    width: 100%;
+    height: 70px;
+    justify-content: center;
+    margin-top: 30px;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.connect {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.template {
+    padding-top: 8px;
+    font-size: small;
+    color: rgb(212, 208, 208);
+}
+
+.links {
+    margin-top: 8px;
+    padding-left: 100px;
+    display: flex;
+}
+
+.links i {
+    padding-right: 5px;
+}
+
+.links a {
+    padding-right: 50px;
+    background-color: transparent;
+    color: rgb(189, 186, 186);
+    font-size: small;
+}
+
+.hover {
+    transition: transform 0.3s ease-out;
+}
+
+.hover:hover {
+    transform: scale(1.03);
 }

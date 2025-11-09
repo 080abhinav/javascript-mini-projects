@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,18 +12,70 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" /> 
 </head>
+
 <body>
     <script src="script.js"></script>
     <div class="navbar">
-        <div>
+        <div class="hover">
             <img src="images/rock-paper-scissors.png" alt="logo" class="logo">
         </div>
         <div>
-            <p style="color: #00fff7; font-size: 2rem; letter-spacing: 3px; ">ROCK PAPER SCISSORS</p>
+            <p style="color: #2bddd7; font-size: 2rem; letter-spacing: 20px;  text-shadow: 0 0 5px #00fff7;font-weight: bolder;
+ ">ROCK PAPER SCISSORS</p>
         </div>
         <div>
-            <i class="fa-regular fa-face-kiss-wink-heart fa-2x" style="color: aliceblue; margin-right:1.5rem;"></i>
+            <button class="rulebook hover">Rules</button>
         </div>
     </div>
+    <p style="color: #2bddd7; font-size: 3rem; letter-spacing: 5px; text-align: center; margin-top: 3rem;text-shadow: 0 0 5px #00fff7;font-weight: bold;">MAKE A MOVE
+    </p>
+    <div class="main">
+        <div>
+            <button class="game-button hover"><img src="images/rock.png" alt="rock" class="game-img"></button>
+        </div>
+        <div>
+            <button class="game-button hover"><img src="images/paper.png" alt="paper" class="game-img"></button>
+        </div>
+        <div>
+            <button class="game-button hover"><img src="images/scissors.png" alt="scissors" class="game-img"></button>
+        </div>
+    </div>
+    <div class="score">
+        <table>
+            <tr>
+                <th>YOU</th>
+                <th>COMPUTER</th>
+                <th>DRAWS</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+        </table>
+    </div>
+    <div class="reset-score">
+        <button class="reset-btn hover">RESET SCORE</button>
+    </div>
+
+
+    <div class="footer">
+        <center><div>Made with ❤️ by Abhinav</div></center>
+        <div class="connect">
+            <div class="template">Connect with me</div>
+            <div class="links">
+                <a class="hover" href="mailto:08abhinav03singh@gmail.com" target="_blank"><i
+                        class="fa-solid fa-envelope fa-lg"></i>Mail Me</a>
+                <a class="hover" href="https://www.linkedin.com/in/080abhinav/" target="_blank"><i
+                        class="fa-brands fa-linkedin fa-lg"></i>LinkedIn</a>
+                <a class="hover" href="https://github.com/080abhinav" target="_blank"><i
+                        class="fa-brands fa-github fa-lg"></i>GitHub</a>
+                <a class="hover" href="https://x.com/080abhinav" target="_blank"><i
+                        class="fa-brands fa-x-twitter fa-lg"></i>X(Twitter)</a>
+            </div>
+        </div>
+    </div>
+    
 </body>
+
 </html>
