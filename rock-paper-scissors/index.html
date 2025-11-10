@@ -10,11 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <script src="script.js"></script>
+
     <div class="navbar">
         <div class="hover">
             <img src="images/rock-paper-scissors.png" alt="logo" class="logo">
@@ -24,20 +24,31 @@
  ">ROCK PAPER SCISSORS</p>
         </div>
         <div>
-            <button class="rulebook hover">Rules</button>
+            <button onclick="rule()" class="rulebook hover">Rules</button>
         </div>
     </div>
-    <p style="color: #2bddd7; font-size: 3rem; letter-spacing: 5px; text-align: center; margin-top: 3rem;text-shadow: 0 0 5px #00fff7;font-weight: bold;">MAKE A MOVE
-    </p>
+    <div class="rule">
+        <div class="rule-content">
+            <div class="close-btn">
+                <button onclick="remove()">❌</button>
+            </div>
+            <img src="images/rule.png" alt="rule" class="rule-img">
+        </div>
+    </div>
+
+    <p class="heading">MAKE A MOVE</p>
     <div class="main">
         <div>
-            <button class="game-button hover"><img src="images/rock.png" alt="rock" class="game-img"></button>
+            <button class="game-button hover" onclick="playGame('rock')"><img src="images/rock.png" alt="rock"
+                    class="game-img"></button>
         </div>
         <div>
-            <button class="game-button hover"><img src="images/paper.png" alt="paper" class="game-img"></button>
+            <button class="game-button hover" onclick="playGame('paper')"><img src="images/paper.png" alt="paper"
+                    class="game-img"></button>
         </div>
         <div>
-            <button class="game-button hover"><img src="images/scissors.png" alt="scissors" class="game-img"></button>
+            <button class="game-button hover" onclick="playGame('scissor')"><img src="images/scissors.png"
+                    alt="scissors" class="game-img"></button>
         </div>
     </div>
     <div class="score">
@@ -48,19 +59,21 @@
                 <th>DRAWS</th>
             </tr>
             <tr>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
+                <td id="you">0</td>
+                <td id="comp">0</td>
+                <td id="draw">0</td>
             </tr>
         </table>
     </div>
     <div class="reset-score">
-        <button class="reset-btn hover">RESET SCORE</button>
+        <button onclick="reset()" class="reset-btn hover">RESET SCORE</button>
     </div>
 
 
     <div class="footer">
-        <center><div>Made with ❤️ by Abhinav</div></center>
+        <center>
+            <div>Made with ❤️ by Abhinav</div>
+        </center>
         <div class="connect">
             <div class="template">Connect with me</div>
             <div class="links">
@@ -75,7 +88,7 @@
             </div>
         </div>
     </div>
-    
+    <script src="script.js"></script>
 </body>
 
 </html>
