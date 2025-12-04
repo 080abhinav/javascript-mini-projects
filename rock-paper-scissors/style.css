@@ -1,17 +1,13 @@
 body {
-    background: radial-gradient(circle at top left, #0f0c29, #302b63, #24243e);
-    min-height: 100vh;
+    background: #e1d9c4;
     font-family: 'Orbitron', sans-serif;
-    background-repeat: no-repeat;
-    background-size: cover;
-
 }
 
 .navbar {
     display: flex;
     background: rgba(0, 0, 0, 0.25);
-    border-bottom: 1px solid rgba(0, 255, 255, 0.3);
-    box-shadow: 0 2px 10px rgba(0, 255, 255, 0.2);
+    border-bottom: 1px solid #4A3B32;
+    box-shadow: 0 2px 10px #4A3B32;
     border-radius: 0px 0px 30px 30px;
     width: 100%;
     height: 70px;
@@ -32,9 +28,17 @@ body {
     cursor: pointer;
     font-size: 1.2rem;
     font-weight: bolder;
+    border: 2px solid black;
     border-radius: 30px;
     padding: 10px 15px 10px 15px;
     font-family: 'Orbitron', sans-serif;
+}
+
+.title {
+    color: #4A3B32;
+    font-size: 2rem;
+    letter-spacing: 18px;
+    font-weight: bolder;
 }
 
 .rule {
@@ -83,51 +87,49 @@ body {
 }
 
 .heading {
-    color: #00fff7;
+    color: #5e4c42;
     font-size: 3rem;
     letter-spacing: 5px;
     text-align: center;
     margin-top: 3rem;
-    text-shadow: 0 0 5px #00fff7;
     font-weight: bold;
 }
 
 .won {
-    color: #00ff88;
+    color: #08a65c;
     font-size: 3rem;
     letter-spacing: 5px;
     text-align: center;
     margin-top: 3rem;
-    text-shadow: 0 0 5px #00ff88;
     font-weight: bold;
 }
 
 .lose {
-    color: #ff3366;
+    color: #e31c4e;
     font-size: 3rem;
     letter-spacing: 5px;
     text-align: center;
     margin-top: 3rem;
-    text-shadow: 0 0 5px #ff3366;
     font-weight: bold;
 }
 
 .main {
     display: flex;
     justify-content: space-evenly;
-
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 .game-button {
-    border-radius: 50%;
     background-color: transparent;
     border: none;
+
     cursor: pointer;
     overflow: hidden;
 }
 
 .game-img {
-    width: 20rem;
+    height: 200px;
 }
 
 .score {
@@ -139,15 +141,15 @@ body {
 table {
     width: 75%;
     text-align: center;
-    border: 2px solid #00fff7;
-    box-shadow: 0 0 15px #00fff7;
+    border: 2px solid #4A3B32;
+    box-shadow: 0 0 15px #4A3B32;
     border-radius: 8px;
     overflow: hidden;
 }
 
 th,
 td {
-    border: 1px solid #00fff7;
+    border: 2px solid #4A3B32;
     padding: 10px 20px;
     font-size: 1.2rem;
     color: #ffffff;
@@ -155,8 +157,8 @@ td {
 }
 
 th {
-    background: rgba(0, 255, 247, 0.1);
-    color: #00fff7;
+    background: rgba(0, 255, 247, 0);
+    color: #4A3B32;
 }
 
 td {
@@ -174,7 +176,7 @@ td {
     font-weight: bolder;
     border-radius: 30px;
     padding: 10px 15px 10px 15px;
-    border: none;
+    border: 2px solid black;
     cursor: pointer;
     font-family: 'Orbitron', sans-serif;
 }
@@ -184,8 +186,8 @@ td {
     flex-direction: column;
     align-items: center;
     background: rgba(0, 0, 0, 0.25);
-    border-top: 1px solid rgba(0, 255, 255, 0.3);
-    box-shadow: 0 2px 10px rgba(0, 255, 255, 0.2);
+    border-top: 1px solid #4A3B32;
+    box-shadow: 0 2px 10px #4A3B32;
     border-radius: 30px 30px 0px 0px;
     width: 100%;
     height: 70px;
@@ -204,7 +206,7 @@ td {
 .template {
     padding-top: 8px;
     font-size: small;
-    color: rgb(212, 208, 208);
+    color: #4A3B32;
 }
 
 .links {
@@ -220,7 +222,7 @@ td {
 .links a {
     padding-right: 50px;
     background-color: transparent;
-    color: rgb(189, 186, 186);
+    color: #4A3B32;
     font-size: small;
 }
 
@@ -230,4 +232,150 @@ td {
 
 .hover:hover {
     transform: scale(1.03);
+}
+
+@media screen and (max-width:1023px) {
+    .title {
+        font-size: 1.5rem;
+        letter-spacing: 10px;
+    }
+
+    .game-img {
+        height: 150px;
+    }
+
+    .rulebook {
+        font-size: 1rem;
+        padding: 7px 10px 7px 10px;
+    }
+
+    .heading {
+        font-size: 1.5rem;
+    }
+
+    .won {
+        font-size: 1.5rem;
+    }
+
+    .lose {
+        font-size: 1.5rem;
+    }
+
+    .reset-btn {
+        font-size: 0.7rem;
+        padding: 7px 10px 7px 10px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .title {
+        font-size: 3vw;
+        letter-spacing: 5px;
+    }
+
+    .heading {
+        font-size: 1.2rem;
+    }
+
+    .links {
+        padding-left: 30px;
+    }
+
+    .won {
+        font-size: 1.2rem;
+    }
+
+    .lose {
+        font-size: 1.2rem;
+    }
+
+    .logo {
+        width: 30px;
+        margin-left: 1.5rem;
+    }
+
+    th,
+    td {
+        padding: 7px 15px;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .title {
+        font-size: 4vw;
+        letter-spacing: 1px;
+    }
+
+    .rulebook {
+        font-size: 0.5rem;
+        padding: 2px 5px 2px 5px;
+    }
+
+    .heading {
+        font-size: 1.2rem;
+        margin-bottom: 50px;
+    }
+
+    .game-img {
+        height: 80px;
+    }
+
+    .won {
+        font-size: 1.2rem;
+    }
+
+    table {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    .lose {
+        font-size: 1.2rem;
+    }
+
+    .footer {
+        margin-top: 40px;
+    }
+
+    .logo {
+        width: 30px;
+        margin-left: 1.5rem;
+    }
+
+    th,
+    td {
+        padding: 5px 10px;
+        font-size: 0.6rem;
+    }
+
+    .footer {
+        font-size: 0.8rem;
+
+    }
+
+    .template {
+        font-size: 0.6rem;
+    }
+
+    .links {
+        padding-left: 10px;
+    }
+
+    .links a {
+        padding-right: 10px;
+        font-size: 0.6rem;
+    }
+
+}
+
+@media screen and (max-width:320px) {
+    .title {
+        font-size: 3vw;
+        letter-spacing: 1px;
+    }
+
+    .game-img {
+        height: 70px;
+    }
 }

@@ -29,8 +29,7 @@
             <img src="images/rock-paper-scissors.png" alt="logo" class="logo">
         </div>
         <div>
-            <p style="color: #2bddd7; font-size: 2rem; letter-spacing: 20px;  text-shadow: 0 0 5px #00fff7;font-weight: bolder;
- ">ROCK PAPER SCISSORS</p>
+            <p class="title">ROCK PAPER SCISSORS</p>
         </div>
         <div>
             <button onclick="rule()" class="rulebook hover">Rules</button>
@@ -47,18 +46,17 @@
 
     <p class="heading">MAKE A MOVE</p>
     <div class="main">
-        <div>
-            <button class="game-button hover" onclick="playGame('rock')"><img src="images/rock.png" alt="rock"
-                    class="game-img"></button>
-        </div>
-        <div>
-            <button class="game-button hover" onclick="playGame('paper')"><img src="images/paper.png" alt="paper"
-                    class="game-img"></button>
-        </div>
-        <div>
-            <button class="game-button hover" onclick="playGame('scissor')"><img src="images/scissors.png"
-                    alt="scissors" class="game-img"></button>
-        </div>
+
+        <button class="game-button hover" onclick="playGame('rock')"><img src="images/handrock.png" alt="rock"
+                class="game-img"></button>
+
+
+        <button class="game-button hover" onclick="playGame('paper')"><img src="images/handpaper.png" alt="paper"
+                class="game-img"></button>
+
+        <button class="game-button hover" onclick="playGame('scissor')"><img src="images/handscissors.png"
+                alt="scissors" class="game-img"></button>
+
     </div>
     <div class="score">
         <table>
