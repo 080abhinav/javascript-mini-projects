@@ -11,11 +11,16 @@ function computerChance() {
         compMove = 'scissor';
     }
 }
-let score = {
+let score = JSON.parse(localStorage.getItem('score'))||{
     wins: 0,
     loss: 0,
     tie: 0
 };
+
+document.querySelector('#you').innerText = score.wins;
+document.querySelector('#comp').innerText = score.loss;
+document.querySelector('#draw').innerText = score.tie;
+
 let result = '';
 function playGame(playerMove) {
     computerChance();
@@ -68,11 +73,13 @@ function playGame(playerMove) {
         score.tie += 1;
         document.querySelector('#draw').innerText = score.tie;
     }
+    localStorage.setItem('score',JSON.stringify(score));
 }
 function reset() {
     score.wins = 0;
     score.loss = 0;
     score.tie = 0;
+    localStorage.removeItem('score');
     document.querySelector('#draw').innerText = score.tie;
     document.querySelector('#comp').innerText = score.loss;
     document.querySelector('#you').innerText = score.wins;
