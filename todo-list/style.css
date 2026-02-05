@@ -22,7 +22,27 @@ body {
     letter-spacing: 18px;
     font-weight: bolder;
 }
-
+.form{
+    display:flex;
+    justify-content: center;
+    margin-top: 7vw;
+    flex-wrap: wrap;
+}
+.input{
+    height:30px;
+    margin-right: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.event{
+    width: 220px;
+}
+.add{
+    background-color: rgb(0, 150, 0);
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
 .footer {
     display: flex;
@@ -38,6 +58,9 @@ body {
     margin-top: 30px;
     color: white;
     font-size: 1.2rem;
+    position:fixed;
+    bottom:0;
+    left: 0;
 }
 
 .connect {
