@@ -7,6 +7,21 @@ Each project focuses on strengthening core concepts like DOM manipulation, event
 
 ## 📂 Projects Included
 
+### 🌦️ Weather App
+A modern weather application that fetches real-time data using an API.
+
+**Features:**
+- Search weather by city name
+- Clean and responsive UI
+- Secure API handling using Netlify Functions
+- Built with Fetch API and Serverless Functions
+
+🔗 Live Demo: https://080weathernow.netlify.app/
+
+📁 Folder: `Weather/`
+
+---
+
 ### 📝 Todo List App
 A simple yet functional todo application built using Vanilla JavaScript.
 
