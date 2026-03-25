@@ -65,5 +65,4 @@ A classic Rock Paper Scissors game built with JavaScript.
 - Practice JavaScript fundamentals
 - Build small but complete projects
 - Understand real-world frontend logic
-- Create a solid base before moving to frameworks like React
 
