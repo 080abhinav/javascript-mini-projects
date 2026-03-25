@@ -48,7 +48,7 @@ A classic Rock Paper Scissors game built with JavaScript.
 - Score tracking
 - Simple and interactive UI
 
-🔗 Live Demo: https://080rockpaperscissors.netlify.app/ 
+🔗 Live Demo: https://080rps.netlify.app/ 
 
 📁 Folder: `rock-paper-scissor/`
 
