@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: radial-gradient(circle at 80% 10%,
+            #5a2e12,
+            #1a0d05 30%,
+            #000000 70%);
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline;
+}
+
+#now {
+    color: orange;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    opacity: 1;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 40px;
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6);
+}
+
+.weather-card h1 {
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+.search-box {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px 0 0 10px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.search-box input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.search-box button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    background: #ffffff;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.temp {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.city {
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+.desc {
+    margin-top: 20px;
+    opacity: 0.8;
+    font-size: 18px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.156);
+    border-top: 1px solid #e19a00;
+    box-shadow: 0 2px 10px #232120;
+    border-radius: 30px 30px 0px 0px;
+    width: 100%;
+    height: 70px;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+    margin-top: auto;
+}
+
+
+.connect {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.template {
+    padding-top: 8px;
+    font-size: small;
+    color: #ffffff;
+}
+
+.links {
+    margin-top: 8px;
+    padding-left: 100px;
+    display: flex;
+}
+
+.links i {
+    padding-right: 5px;
+}
+
+.links a {
+    padding-right: 50px;
+    background-color: transparent;
+    color: #fffefe;
+    font-size: small;
+}
+
+.hover {
+    transition: transform 0.3s ease-out;
+}
+
+.hover:hover {
+    transform: scale(1.03);
+}
+
+
+@media screen and (max-width:768px) {
+
+
+    .links {
+        padding-left: 30px;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+
+    .links {
+        padding-left: 10px;
+    }
+
+    .links a {
+        padding-right: 10px;
+        font-size: 0.6rem;
+    }
+
+}
+
+@media screen and (max-width:400px) {
+    .nav-links {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+}
