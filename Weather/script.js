@@ -12,7 +12,7 @@ async function searchWeather() {
         var response = await fetch(url);
         var data = await response.json();
 
-        if (data.cod === "404") {
+        if (data.cod === 404) {
             alert("City not found");
             return;
         }
